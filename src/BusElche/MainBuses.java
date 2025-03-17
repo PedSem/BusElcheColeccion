@@ -11,6 +11,7 @@ public class MainBuses {
         buses.Agregarparada("003","Vicente Blasco Ibañez","Vicente Blasco Ibañez 80");
         LineasBus lineasBusA=new LineasBus("A");
         lineasBusA.AgregarParada("001",75);
+        lineasBusA.AgregarParada("002",50);
         lineasBusA.AgregarParada("003",60);
         buses.AgregarLinea(lineasBusA);
         String inicio,linea,destino;
@@ -51,5 +52,6 @@ public class MainBuses {
                 continuar=false;
             }
         }while (!buses.ValidarNumero(destino) || !continuar);
+        buses.Mostrartiempo();
     }
 }

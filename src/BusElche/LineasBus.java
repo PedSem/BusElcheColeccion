@@ -20,6 +20,11 @@ public class LineasBus {
         }
         paradas.add(parada);
     }
+    public void Mostrartiempo(){
+        for(Map.Entry<String,Integer>tiempo: tiempos.entrySet()){
+            System.out.println(lineabus + " " + tiempo.getKey() + "-> " + tiempo.getValue() + " segundos");
+        }
+    }
 
     public String getLineabus() {
         return lineabus;

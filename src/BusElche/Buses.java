@@ -21,6 +21,11 @@ public class Buses {
         return true;
 
     }
+    public void Mostrartiempo(){
+        for(LineasBus lineasBus: lineasBusMap.values()){
+            lineasBus.Mostrartiempo();
+        }
+    }
     public boolean ValidarNumero(String numero){
         for(int i=0;i<numero.length();i++){
             if(!Character.isDigit(numero.charAt(i))){
