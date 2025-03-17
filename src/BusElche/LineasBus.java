@@ -21,23 +21,6 @@ public class LineasBus {
         paradas.add(parada);
     }
 
-    public void CalcularTiempo(String inicio,String destino){
-        int sumatotal=0;
-        boolean continuar=false;
-        for(int i=0;i< paradas.size()-1;i++){
-            String actual=paradas.get(i);
-            String siguiente=paradas.get(i+1);
-            if(actual.equalsIgnoreCase(inicio)){
-                continuar=true;
-
-            }
-
-        }
-        if(continuar){
-
-        }
-    }
-
     public String getLineabus() {
         return lineabus;
     }
