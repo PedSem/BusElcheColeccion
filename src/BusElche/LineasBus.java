@@ -14,13 +14,28 @@ public class LineasBus {
 
     }
     public void AgregarParada(String parada,int tiempo){
-        if(paradas.isEmpty()){
-            System.out.println("Las paradas estan vacias");
-        }else{
+        if(!paradas.isEmpty()){
             String paradasclave=paradas.get(paradas.size()-1) + "-" + paradas;
             tiempos.put(paradasclave,tiempo);
         }
         paradas.add(parada);
+    }
+
+    public void CalcularTiempo(String inicio,String destino){
+        int sumatotal=0;
+        boolean continuar=false;
+        for(int i=0;i< paradas.size()-1;i++){
+            String actual=paradas.get(i);
+            String siguiente=paradas.get(i+1);
+            if(actual.equalsIgnoreCase(inicio)){
+                continuar=true;
+
+            }
+
+        }
+        if(continuar){
+
+        }
     }
 
     public String getLineabus() {
